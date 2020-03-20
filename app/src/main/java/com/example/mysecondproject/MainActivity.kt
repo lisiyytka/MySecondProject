@@ -2,6 +2,7 @@ package com.example.mysecondproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
@@ -9,4 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+}
+
+fun goUp(savedState: TextView.SavedState?){
+
 }
