@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    style = "@style/backCollor">
 
     <TextView
         android:id="@+id/textView_finish_result"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:textSize="70sp"
-        android:gravity="center"
+        android:textSize="50sp"
+        style = "@style/FinishStr"
+        android:gravity="end"
+        android:ellipsize="end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.597"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -26,13 +29,19 @@
         android:layout_height="match_parent">
 
         <Button
+            android:onClick="getResult"
+            style="@style/btnEdit"
+            android:text="@string/edityes"
             android:id="@+id/edit_btn"
+            android:gravity="center"
             android:layout_width="200sp"
             android:layout_height="80sp"
-            android:layout_marginStart="100dp"
-            android:layout_marginEnd="200dp">
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginStart="100dp">
 
         </Button>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

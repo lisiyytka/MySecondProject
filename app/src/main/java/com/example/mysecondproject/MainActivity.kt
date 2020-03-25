@@ -14,6 +14,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    fun getResult(view: View){
+        val resultIntent= Intent(this, CalculateActivity::class.java)
+        startActivity(resultIntent)
+    }
+
 
 }
 

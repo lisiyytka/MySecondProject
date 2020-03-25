@@ -33,7 +33,7 @@
     </style>
 
     <style name="FinishStr">
-        <item name="android:background">#ffffff</item>
+        <item name="android:background">#92e7fc</item>
         <item name="android:textColor">#000000</item>
         <item name="android:textSize">70sp</item>
         <item name="android:gravity">center</item>
@@ -41,10 +41,14 @@
     </style>
 
     <style name="btnEdit">
-        <item name="android:background">#ffffff</item>
+        <item name="android:background">#12e36d</item>
         <item name="android:textColor">#000000</item>
         <item name="android:textSize">70sp</item>
         <item name="android:gravity">center</item>
+    </style>
+
+    <style name="backCollor">
+        <item name="android:background">#d9f7ff</item>
     </style>
 
 </resources>

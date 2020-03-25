@@ -46,7 +46,6 @@ class CalculateActivity : AppCompatActivity() {
 
         btn_equal.setOnClickListener {
             try {
-
                 val ex = ExpressionBuilder(math_operation.text.toString()).build()
                 val result = ex.evaluate()
 
