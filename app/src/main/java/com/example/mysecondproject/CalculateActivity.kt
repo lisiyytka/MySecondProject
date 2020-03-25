@@ -29,7 +29,7 @@ class CalculateActivity : AppCompatActivity() {
         btn_mulriplate.setOnClickListener { setTextFields("*") }
         btn_edgeLeft.setOnClickListener { setTextFields("(") }
         btn_edgeRight.setOnClickListener { setTextFields(")") }
-//хуй
+
         btn_ac.setOnClickListener {
             math_operation.text = ""
             result_text.text=""

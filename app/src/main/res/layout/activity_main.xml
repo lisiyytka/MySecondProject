@@ -7,59 +7,32 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="223dp"
-        android:layout_height="78dp"
-        android:text="@string/hello_neiborr"
+        android:id="@+id/textView_finish_result"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:textSize="70sp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.597"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403" />
+        app:layout_constraintVertical_bias="0.403">
 
-    <Button
-        android:onClick="plusME"
-        android:id="@+id/button"
-        android:layout_width="142dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginRight="112dp"
-        android:background="#2196F3"
-        android:text="@string/plus"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="OnClick" />
+    </TextView>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="161dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginLeft="108dp"
-        android:layout_marginTop="80dp"
-        android:background="#2196F3"
-        android:text="@string/Minus"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.196" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="135dp"
-        android:layout_height="57dp"
-        android:background="#EFEFEF"
-        android:text="@string/SimpleResult"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.148"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.093" />
+        <Button
+            android:id="@+id/edit_btn"
+            android:layout_width="200sp"
+            android:layout_height="80sp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="200dp">
+
+        </Button>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
