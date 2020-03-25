@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MySecondProject</string>
+    <string name="Minus">-</string>
+    <string name="hello_neiborr">Hello neiborr</string>
+    <string name="plus">+</string>
+    <string name="SimpleResult">TextView</string>
 </resources>
