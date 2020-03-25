@@ -5,8 +5,9 @@ import android.os.Bundle
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_calculat.*
 import net.objecthunter.exp4j.ExpressionBuilder
+import java.lang.Exception
 
-class CalculatActivity : AppCompatActivity() {
+class CalculateActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,9 +36,9 @@ class CalculatActivity : AppCompatActivity() {
         }
 
         btn_back.setOnClickListener {
-            val str=math_operation.text.ToString()
+            val str=math_operation.text.toString()
             if(str.isNotEmpty()){
-                math_operation.text=str.substring(0,str.lenght-1)
+                math_operation.text=str.substring(0,str.length-1)
 
                 result_text.text=""
             }
@@ -46,16 +47,16 @@ class CalculatActivity : AppCompatActivity() {
         btn_equal.setOnClickListener {
             try {
 
-                val ex = ExpressionBuilder(math_operation.text.ToString()).build()
+                val ex = ExpressionBuilder(math_operation.text.toString()).build()
                 val result = ex.evaluate()
 
-                val longres =result.ToLong()
-                if(result==longres.ToDouble())
-                    result_text.text= longres.ToString()
+                val longres =result.toLong()
+                if(result==longres.toDouble())
+                    result_text.text= longres.toString()
                 else
-                    result_text.text= result.ToString()
+                    result_text.text= result.toString()
 
-            } catch (e:Exeption){
+            } catch (e:Exception){
                 Log.d("Ошибка","Сообщение: ${e.message}")
             }
         }
