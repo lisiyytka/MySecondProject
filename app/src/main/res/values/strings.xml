@@ -5,4 +5,15 @@
     <string name="plus">+</string>
     <string name="SimpleResult">TextView</string>
     <string name="edityes">Edit</string>
+    <string name="qq">AC</string>
+    <string name="edge_left">(</string>
+    <string name="edge_roght">)</string>
+    <string name="spliter">/</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="multiplate">*</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
 </resources>

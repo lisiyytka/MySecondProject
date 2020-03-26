@@ -13,7 +13,7 @@
         android:layout_height="120dp"
         android:textSize="50sp"
         style = "@style/FinishStr"
-        android:gravity="end"
+        android:gravity="center"
         android:ellipsize="end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.597"
@@ -26,19 +26,21 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <Button
-            android:onClick="getResult"
-            style="@style/btnEdit"
-            android:text="@string/edityes"
             android:id="@+id/edit_btn"
-            android:gravity="center"
+            style="@style/btnEdit"
             android:layout_width="200sp"
             android:layout_height="80sp"
+            android:layout_marginStart="100dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="500dp"
-            android:layout_marginStart="100dp">
+            android:gravity="center"
+            android:onClick="getResult"
+            android:text="@string/edityes">
 
         </Button>
 

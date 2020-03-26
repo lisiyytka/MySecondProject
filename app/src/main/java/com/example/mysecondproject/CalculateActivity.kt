@@ -1,5 +1,6 @@
 package com.example.mysecondproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -48,7 +49,7 @@ class CalculateActivity : AppCompatActivity() {
             try {
                 val ex = ExpressionBuilder(math_operation.text.toString()).build()
                 val result = ex.evaluate()
-
+                sendFin(result = ex.evaluate())
                 val longres =result.toLong()
                 if(result==longres.toDouble())
                     result_text.text= longres.toString()
@@ -68,6 +69,11 @@ class CalculateActivity : AppCompatActivity() {
         }
 
         math_operation.append(str)
+    }
+
+    fun sendFin(result: Double){
+        val sendCount =Intent(this,MainActivity::class.java)
+        sendCount.putExtra(MainActivity.TOTAL_COUNT, result.toString())
     }
 }
 
