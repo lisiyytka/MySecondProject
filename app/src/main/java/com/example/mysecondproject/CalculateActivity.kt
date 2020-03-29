@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_calculat.*
 import net.objecthunter.exp4j.ExpressionBuilder
 import java.lang.Exception
@@ -13,7 +15,10 @@ class CalculateActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculat)
-
+        var intent1 = intent
+        val futurMathOper = intent1.getStringExtra("qweer")
+        val mathOperTV = findViewById<TextView>(R.id.math_operation)
+        mathOperTV.text = futurMathOper
         btn_0.setOnClickListener { setTextFields("0") }
         btn_1.setOnClickListener { setTextFields("1") }
         btn_2.setOnClickListener { setTextFields("2") }
@@ -32,7 +37,6 @@ class CalculateActivity : AppCompatActivity() {
         btn_edgeRight.setOnClickListener { setTextFields(")") }
 
         btn_ac.setOnClickListener {
-            math_operation.text = ""
             result_text.text=""
         }
 
@@ -44,22 +48,28 @@ class CalculateActivity : AppCompatActivity() {
                 result_text.text=""
             }
         }
-
+        //Основнаые действия калькулятора
         btn_equal.setOnClickListener {
             try {
-                val ex = ExpressionBuilder(math_operation.text.toString()).build()
+                val ex = ExpressionBuilder(math_operation.text.toString()).build()//библиотека калькулятора
                 val result = ex.evaluate()
-                sendFin(result = ex.evaluate())
-                val longres =result.toLong()
+                val longres =result.toLong()// Убирание 0 после точки
                 if(result==longres.toDouble())
                     result_text.text= longres.toString()
                 else
                     result_text.text= result.toString()
 
+                //Отправка данных в MainActivity
+                val intent = Intent(this@CalculateActivity, MainActivity::class.java)
+                intent.putExtra("resu", result.toString())
+                startActivity(intent)
+
             } catch (e:Exception){
                 Log.d("Ошибка","Сообщение: ${e.message}")
             }
+
         }
+
     }
 
     fun setTextFields(str: String) {
@@ -71,10 +81,6 @@ class CalculateActivity : AppCompatActivity() {
         math_operation.append(str)
     }
 
-    fun sendFin(result: Double){
-        val sendCount =Intent(this,MainActivity::class.java)
-        sendCount.putExtra(MainActivity.TOTAL_COUNT, result.toString())
-    }
 }
 
 
