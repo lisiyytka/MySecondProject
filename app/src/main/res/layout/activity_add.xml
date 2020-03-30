@@ -27,7 +27,7 @@
                  android:src="@drawable/diet"/>
              <ImageView
                  style="@style/add_images"
-                 android:src="@drawable/military-vehicle"/>
+                 android:src="@drawable/military_vehicle"/>
              <ImageView
                  style="@style/add_images"
                  android:src="@drawable/computer"/>
