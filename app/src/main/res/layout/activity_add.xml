@@ -10,126 +10,155 @@
     <LinearLayout
         android:id="@+id/icons"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/show_text">
+
         <LinearLayout
              android:layout_width="match_parent"
-             android:layout_height="wrap_content"
+             android:layout_height="0dp"
              android:orientation="horizontal"
              android:layout_weight="1"
              android:gravity="center">
 
              <ImageView
+                 android:id="@+id/ic_food"
                  style="@style/add_images"
                  android:src="@drawable/diet"/>
              <ImageView
+                 android:id="@+id/ic_transport"
                  style="@style/add_images"
                  android:src="@drawable/military_vehicle"/>
              <ImageView
+                 android:id="@+id/ic_technique"
                  style="@style/add_images"
                  android:src="@drawable/computer"/>
              <ImageView
+                 android:id="@+id/ic_spa"
                  style="@style/add_images"
                  android:src="@drawable/massage"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:orientation="horizontal"
             android:layout_weight="1"
             android:gravity="center">
 
             <ImageView
+                android:id="@+id/ic_clothes"
                 style="@style/add_images"
                 android:src="@drawable/tshirt"/>
             <ImageView
+                android:id="@+id/ic_health"
                 style="@style/add_images"
                 android:src="@drawable/heart"/>
             <ImageView
+                android:id="@+id/ic_travels"
                 style="@style/add_images"
                 android:src="@drawable/beach"/>
             <ImageView
+                android:id="@+id/ic_cafe"
                 style="@style/add_images"
                 android:src="@drawable/cafe"/>
         </LinearLayout>
-
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/vector"
-        style="@style/vector"
-        android:src="@drawable/vector"
-        app:layout_constraintStart_toStartOf="parent"
+    <LinearLayout
+        android:id="@+id/show_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@id/calculator"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/icons"/>
-
-    <TextView
-        android:id="@+id/sum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:textSize="48sp"
-        android:textColor="@color/black"
-        android:text="123"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/vector"
-        app:layout_constraintBottom_toTopOf="@id/vector1"/>
+        app:layout_constraintTop_toBottomOf="@id/icons">
 
-    <ImageView
-        android:id="@+id/check"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
-        android:src="@drawable/ic_check"
-        android:layout_marginHorizontal="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/vector"
-        app:layout_constraintBottom_toTopOf="@id/vector1"/>
+        <ImageView
+            android:id="@+id/vector"
+            style="@style/vector"
+            android:src="@drawable/vector" />
 
-    <ImageView
-        android:id="@+id/vector1"
-        style="@style/vector"
-        android:src="@drawable/vector"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sum"/>
+        <LinearLayout
+            android:id="@+id/total_amount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
 
-    <ImageView
-        android:id="@+id/current"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@drawable/ic_currency_dollar"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="5dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/vector1" />
+            <TextView
+                android:id="@+id/sum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                android:text="123"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                />
 
-    <ImageView
-        android:id="@+id/vector2"
-        style="@style/vector"
-        android:src="@drawable/vector2"
-        app:layout_constraintStart_toEndOf="@id/current"
-        app:layout_constraintTop_toBottomOf="@id/vector1"/>
+            <ImageView
+                android:id="@+id/check"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/ic_check"/>
 
-    <TextView
-        android:id="@+id/massage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="10dp"
-        android:textSize="36sp"
-        android:textColor="@color/black"
-        android:text="123"
-        app:layout_constraintStart_toEndOf="@id/vector2"
-        app:layout_constraintTop_toBottomOf="@id/vector1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/vector1"
+            style="@style/vector"
+            android:src="@drawable/vector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/total_amount" />
+
+        <LinearLayout
+            android:id="@+id/inf"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/current"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="20dp"
+                android:src="@drawable/ic_currency_dollar"/>
+
+            <ImageView
+                android:id="@+id/vector2"
+                style="@style/vector"
+                android:src="@drawable/vector2" />
+
+            <TextView
+                android:id="@+id/massage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                android:text="123"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
 
 
     <LinearLayout
         android:id="@+id/calculator"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:background="@color/gray"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_view"
@@ -142,15 +171,19 @@
             android:layout_margin="5dp"
             android:layout_weight="1">
             <TextView
+                android:id="@+id/btn_plus"
                 style="@style/n_buttons"
                 android:text="+" />
             <TextView
+                android:id="@+id/btn_multiply"
                 style="@style/n_buttons"
                 android:text="*" />
             <TextView
+                android:id="@+id/btn_divide"
                 style="@style/n_buttons"
                 android:text="/" />
             <TextView
+                android:id="@+id/btn_minus"
                 style="@style/n_buttons"
                 android:text="-" />
         </LinearLayout>
@@ -163,15 +196,19 @@
             android:layout_marginVertical="5dp"
             android:layout_weight="1">
             <TextView
+                android:id="@+id/btn_7"
                 style="@style/n_buttons"
                 android:text="7" />
             <TextView
+                android:id="@+id/btn_4"
                 style="@style/n_buttons"
                 android:text="4" />
             <TextView
+                android:id="@+id/btn_1"
                 style="@style/n_buttons"
                 android:text="1" />
             <TextView
+                android:id="@+id/btn_dot"
                 style="@style/n_buttons"
                 android:text="." />
         </LinearLayout>
@@ -183,15 +220,19 @@
             android:layout_margin="5dp"
             android:layout_weight="1">
             <TextView
+                android:id="@+id/btn_8"
                 style="@style/n_buttons"
                 android:text="8"/>
             <TextView
+                android:id="@+id/btn_5"
                 style="@style/n_buttons"
                 android:text="5" />
             <TextView
+                android:id="@+id/btn_2"
                 style="@style/n_buttons"
                 android:text="2" />
             <TextView
+                android:id="@+id/btn_0"
                 style="@style/n_buttons"
                 android:text="0" />
 
@@ -205,18 +246,22 @@
             android:layout_marginVertical="5dp"
             android:layout_weight="1">
             <TextView
+                android:id="@+id/btn_9"
                 style="@style/n_buttons"
                 android:text="9" />
             <TextView
+                android:id="@+id/btn_6"
                 style="@style/n_buttons"
                 android:text="6" />
             <TextView
+                android:id="@+id/btn_3"
                 style="@style/n_buttons"
                 android:text="3" />
             <ImageView
+                android:id="@+id/btn_delete"
                 style="@style/n_buttons"
                 android:src="@drawable/ic_del"
-                android:padding="15dp"/>
+                android:padding="9dp"/>
 
         </LinearLayout>
     </LinearLayout>

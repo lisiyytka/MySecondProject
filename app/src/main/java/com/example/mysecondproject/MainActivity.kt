@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         //возврат значения в math_operation и старт калькулятора
         edit_btn.setOnClickListener {
 
-            val resultIntent= Intent(this@MainActivity, CalculateActivity::class.java)
+            val resultIntent= Intent(this@MainActivity, AddActivity::class.java)
             intent.putExtra("qweer", resultTv1.toString())
             startActivity(resultIntent)
 
