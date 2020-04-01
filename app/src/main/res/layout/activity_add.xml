@@ -208,7 +208,7 @@
                 style="@style/n_buttons"
                 android:text="1" />
             <TextView
-                android:id="@+id/btn_dot"
+                android:id="@+id/btn_dott"
                 style="@style/n_buttons"
                 android:text="." />
         </LinearLayout>
