@@ -17,20 +17,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar!!.title = "Back"
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        var intent = intent
-        val finishRes = intent.getStringExtra("resu")
-        //textView
-        val resultTv = findViewById<TextView>(R.id.textView_finish_result)
-        //setText
-        resultTv.text=finishRes
-        var resultTv1 = "123"
         findViewById<Button>(R.id.edit_btn)
         //возврат значения в math_operation и старт калькулятора
         edit_btn.setOnClickListener {
 
-            val resultIntent= Intent(this@MainActivity, AddActivity::class.java)
-            intent.putExtra("qweer", resultTv1.toString())
-            startActivity(resultIntent)
+            val intent= Intent(this, AddActivity::class.java)
+            startActivity(intent)
 
         }
     }
