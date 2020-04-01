@@ -18,7 +18,7 @@
         <LinearLayout
             android:id="@+id/code"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:orientation="horizontal"
             android:layout_weight="1"
             android:gravity="center">
@@ -30,7 +30,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:text="Код доступа"
                 android:textColor="@color/black"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 />
         </LinearLayout>
         <ImageView
@@ -40,7 +40,7 @@
         <LinearLayout
             android:id="@+id/language"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:orientation="horizontal"
             android:layout_weight="1"
             android:gravity="center">
@@ -52,7 +52,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:text="Язык приложения"
                 android:textColor="@color/black"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 />
         </LinearLayout>
         <ImageView
@@ -62,7 +62,7 @@
         <LinearLayout
             android:id="@+id/delete"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:orientation="horizontal"
             android:layout_weight="1"
             android:gravity="center">
@@ -74,7 +74,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:text="Удалить историю"
                 android:textColor="@color/black"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 />
         </LinearLayout>
         <ImageView
@@ -84,7 +84,7 @@
         <LinearLayout
             android:id="@+id/version"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:orientation="horizontal"
             android:layout_weight="1"
             android:gravity="center">
@@ -96,7 +96,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:text="О приложении"
                 android:textColor="@color/black"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 />
         </LinearLayout>
         <ImageView
@@ -106,7 +106,7 @@
         <LinearLayout
             android:id="@+id/exit"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:orientation="horizontal"
             android:layout_weight="1"
             android:gravity="center">
@@ -118,7 +118,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:text="Выйти из аккаунта"
                 android:textColor="@color/black"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 />
         </LinearLayout>
     </LinearLayout>
