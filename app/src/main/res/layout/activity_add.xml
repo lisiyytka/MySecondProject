@@ -156,24 +156,21 @@
 
     <LinearLayout
         android:id="@+id/calculator"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:background="@color/gray"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="5dp"
-            android:layout_weight="1">
-            <TextView
-                android:id="@+id/btn_plus"
-                style="@style/n_buttons"
-                android:text="+" />
+            android:orientation="horizontal"
+            android:layout_margin="0dp"
+            android:background="@color/darkGray">
+
             <TextView
                 android:id="@+id/btn_multiply"
                 style="@style/n_buttons"
@@ -183,80 +180,93 @@
                 style="@style/n_buttons"
                 android:text="/" />
             <TextView
+                android:id="@+id/btn_plus"
+                style="@style/n_buttons"
+                android:text="+" />
+            <TextView
                 android:id="@+id/btn_minus"
                 style="@style/n_buttons"
                 android:text="-" />
+            <TextView
+                android:id="@+id/btn_equals"
+                style="@style/n_buttons"
+                android:text="=" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="10dp"
-            android:layout_marginVertical="5dp"
-            android:layout_weight="1">
-            <TextView
-                android:id="@+id/btn_7"
-                style="@style/n_buttons"
-                android:text="7" />
-            <TextView
-                android:id="@+id/btn_4"
-                style="@style/n_buttons"
-                android:text="4" />
+            android:orientation="horizontal"
+            android:layout_marginLeft="0dp"
+            android:layout_marginVertical="0dp">
             <TextView
                 android:id="@+id/btn_1"
                 style="@style/n_buttons"
                 android:text="1" />
             <TextView
-                android:id="@+id/btn_dott"
+                android:id="@+id/btn_2"
                 style="@style/n_buttons"
-                android:text="." />
+                android:text="2" />
+            <TextView
+                android:id="@+id/btn_3"
+                style="@style/n_buttons"
+                android:text="3" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="5dp"
-            android:layout_weight="1">
+            android:orientation="horizontal"
+            android:layout_margin="0dp">
             <TextView
-                android:id="@+id/btn_8"
+                android:id="@+id/btn_4"
                 style="@style/n_buttons"
-                android:text="8"/>
+                android:text="4"/>
             <TextView
                 android:id="@+id/btn_5"
                 style="@style/n_buttons"
                 android:text="5" />
             <TextView
-                android:id="@+id/btn_2"
+                android:id="@+id/btn_6"
                 style="@style/n_buttons"
-                android:text="2" />
-            <TextView
-                android:id="@+id/btn_0"
-                style="@style/n_buttons"
-                android:text="0" />
+                android:text="6" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginRight="10dp"
-            android:layout_marginVertical="5dp"
-            android:layout_weight="1">
+            android:orientation="horizontal"
+            android:layout_margin="0dp">
+            <TextView
+                android:id="@+id/btn_7"
+                style="@style/n_buttons"
+                android:text="7"/>
+            <TextView
+                android:id="@+id/btn_8"
+                style="@style/n_buttons"
+                android:text="8" />
             <TextView
                 android:id="@+id/btn_9"
                 style="@style/n_buttons"
                 android:text="9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="0dp"
+            android:layout_marginVertical="0dp">
             <TextView
-                android:id="@+id/btn_6"
+                android:id="@+id/btn_dott"
                 style="@style/n_buttons"
-                android:text="6" />
+                android:text="." />
             <TextView
-                android:id="@+id/btn_3"
+                android:id="@+id/btn_0"
                 style="@style/n_buttons"
-                android:text="3" />
+                android:text="0" />
             <ImageView
                 android:id="@+id/btn_delete"
                 style="@style/n_buttons"
