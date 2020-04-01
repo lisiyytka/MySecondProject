@@ -4,22 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_add.*
-import kotlinx.android.synthetic.main.activity_add.btn_0
-import kotlinx.android.synthetic.main.activity_add.btn_1
-import kotlinx.android.synthetic.main.activity_add.btn_2
-import kotlinx.android.synthetic.main.activity_add.btn_3
-import kotlinx.android.synthetic.main.activity_add.btn_4
-import kotlinx.android.synthetic.main.activity_add.btn_5
-import kotlinx.android.synthetic.main.activity_add.btn_6
-import kotlinx.android.synthetic.main.activity_add.btn_7
-import kotlinx.android.synthetic.main.activity_add.btn_8
-import kotlinx.android.synthetic.main.activity_add.btn_9
-import kotlinx.android.synthetic.main.activity_add.btn_minus
-import kotlinx.android.synthetic.main.activity_add.btn_plus
-import kotlinx.android.synthetic.main.activity_calculat.*
 import net.objecthunter.exp4j.ExpressionBuilder
 import java.lang.Exception
+
 
 class AddActivity : BaseActivity(2) {
     private val TAG = "AddActivity"
@@ -45,27 +35,27 @@ class AddActivity : BaseActivity(2) {
         btn_8.setOnClickListener { setTextFields("8") }
         btn_9.setOnClickListener { setTextFields("9") }
         btn_dott.setOnClickListener { setTextFields(".") }
-        btn_ac.setOnClickListener {
-            result_text.text=""
-        }
+        //btn_ac.setOnClickListener {
+            sum.text=""
+    //    }
         btn_delete.setOnClickListener {
-            val str=math_operation.text.toString()
+            val str=sum.text.toString()
             if(str.isNotEmpty()){
-                math_operation.text=str.substring(0,str.length-1)
+                sum.text=str.substring(0,str.length-1)
 
-                result_text.text=""
+                sum.text=""
             }
         }
         //Основнаые действия калькулятора
-        btn_equal.setOnClickListener {
+        btn_equals.setOnClickListener {
             try {
-                val ex = ExpressionBuilder(math_operation.text.toString()).build()//библиотека калькулятора
+                val ex = ExpressionBuilder(sum.text.toString()).build()//библиотека калькулятора
                 val result = ex.evaluate()
                 val longres =result.toLong()// Убирание 0 после точки
                 if(result==longres.toDouble())
-                    result_text.text= longres.toString()
+                    sum.text= longres.toString()
                 else
-                    result_text.text= result.toString()
+                    sum.text= result.toString()
 
                 //Отправка данных в MainActivity
                 //val intent = Intent(this@CalculateActivity, MainActivity::class.java)
@@ -81,12 +71,12 @@ class AddActivity : BaseActivity(2) {
     }
 
     fun setTextFields(str: String) {
-        if(result_text.text!="") {
-            math_operation.text = result_text.text
-            result_text.text=""
+        if(sum.text!="") {
+            sum.text = sum.text
+            sum.text=""
         }
 
-        math_operation.append(str)
+        sum.append(str)
     }
 }
 
