@@ -115,7 +115,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_weight="1"
-                    android:text="123"
                     android:textColor="@color/black"
                     android:textSize="40sp" />
 
@@ -156,16 +155,15 @@
                     style="@style/vector"
                     android:src="@drawable/vector2" />
 
-                <TextView
+                <EditText
                     android:id="@+id/massage"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="289dp"
+                    android:layout_height="47dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="5dp"
                     android:layout_weight="1"
-                    android:text="123"
                     android:textColor="@color/black"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

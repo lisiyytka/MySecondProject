@@ -35,9 +35,7 @@ class AddActivity : BaseActivity(2) {
         btn_8.setOnClickListener { setTextFields("8") }
         btn_9.setOnClickListener { setTextFields("9") }
         btn_dott.setOnClickListener { setTextFields(".") }
-        //btn_ac.setOnClickListener {
-            sum.text=""
-    //    }
+
         btn_delete.setOnClickListener {
             val str=sum.text.toString()
             if(str.isNotEmpty()){
@@ -46,6 +44,7 @@ class AddActivity : BaseActivity(2) {
                 sum.text=""
             }
         }
+
         //Основнаые действия калькулятора
         btn_equals.setOnClickListener {
             try {
@@ -57,12 +56,7 @@ class AddActivity : BaseActivity(2) {
                 else
                     sum.text= result.toString()
 
-                //Отправка данных в MainActivity
-                //val intent = Intent(this@CalculateActivity, MainActivity::class.java)
-                //intent.putExtra("resu", result.toString())
-                //startActivity(intent)
-
-            } catch (e: Exception){
+            } catch (e:Exception){
                 Log.d("Ошибка","Сообщение: ${e.message}")
             }
 
@@ -71,10 +65,6 @@ class AddActivity : BaseActivity(2) {
     }
 
     fun setTextFields(str: String) {
-        if(sum.text!="") {
-            sum.text = sum.text
-            sum.text=""
-        }
 
         sum.append(str)
     }

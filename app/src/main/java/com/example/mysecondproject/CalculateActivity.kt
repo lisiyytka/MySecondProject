@@ -59,11 +59,6 @@ class CalculateActivity : AppCompatActivity() {
                 else
                     result_text.text= result.toString()
 
-                //Отправка данных в MainActivity
-                val intent = Intent(this@CalculateActivity, MainActivity::class.java)
-                intent.putExtra("resu", result.toString())
-                startActivity(intent)
-
             } catch (e:Exception){
                 Log.d("Ошибка","Сообщение: ${e.message}")
             }
