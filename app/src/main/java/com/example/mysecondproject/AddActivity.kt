@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_add.*
+import kotlinx.android.synthetic.main.activity_money.*
 import net.objecthunter.exp4j.ExpressionBuilder
 import java.lang.Exception
 
@@ -19,7 +20,6 @@ class AddActivity : BaseActivity(2) {
         setContentView(R.layout.activity_add)
         setupBottomNavigation()
         Log.d(TAG, "onCreate")
-
         btn_plus.setOnClickListener { setTextFields("+") }
         btn_multiply.setOnClickListener { setTextFields("*") }
         btn_divide.setOnClickListener { setTextFields("/") }
@@ -40,10 +40,9 @@ class AddActivity : BaseActivity(2) {
             val str=sum.text.toString()
             if(str.isNotEmpty()){
                 sum.text=str.substring(0,str.length-1)
-
-                sum.text=""
             }
-        }
+    }
+
 
         //Основнаые действия калькулятора
         btn_equals.setOnClickListener {
@@ -62,11 +61,18 @@ class AddActivity : BaseActivity(2) {
 
         }
 
+        check.setOnClickListener {
+            val sumRetr = sum.text.toString()
+            val intent = Intent(this@AddActivity, MoneyActivity::class.java)
+            intent.putExtra("sum",sumRetr.toString())
+            startActivity(intent)
+        }
+
     }
 
     fun setTextFields(str: String) {
-
         sum.append(str)
     }
+
 }
 
