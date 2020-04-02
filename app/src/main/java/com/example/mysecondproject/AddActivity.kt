@@ -10,6 +10,8 @@ import kotlinx.android.synthetic.main.activity_add.*
 import kotlinx.android.synthetic.main.activity_money.*
 import net.objecthunter.exp4j.ExpressionBuilder
 import java.lang.Exception
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 
 class AddActivity : BaseActivity(2) {
@@ -67,7 +69,9 @@ class AddActivity : BaseActivity(2) {
             intent.putExtra("sum",sumRetr.toString())
             startActivity(intent)
         }
-
+        val currencies = arrayOf("$","₽","€")
+        val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, currencies)
+        current.adapter = arrayAdapter
     }
 
     fun setTextFields(str: String) {
