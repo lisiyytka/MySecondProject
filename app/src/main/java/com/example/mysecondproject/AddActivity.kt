@@ -1,5 +1,6 @@
 package com.example.mysecondproject
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -17,6 +18,7 @@ import android.widget.Spinner;
 class AddActivity : BaseActivity(2) {
     private val TAG = "AddActivity"
 
+    @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add)
@@ -69,9 +71,9 @@ class AddActivity : BaseActivity(2) {
             intent.putExtra("sum",sumRetr.toString())
             startActivity(intent)
         }
-        val currencies = arrayOf("$","₽","€")
-        val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, currencies)
-        current.adapter = arrayAdapter
+
+       val arrayAdapter = ArrayAdapter.createFromResource(this, R.array.currencies,R.layout.spinner_item)
+       current.adapter = arrayAdapter
     }
 
     fun setTextFields(str: String) {

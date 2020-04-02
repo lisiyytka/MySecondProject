@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ArrayAdapter
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_add.*
 import androidx.recyclerview.widget.RecyclerView
@@ -23,5 +24,8 @@ class MoneyActivity : BaseActivity(0) {
 
         val sumCentre = findViewById<TextView>(R.id.sum_centre)
         sumCentre.text="$"+sumTv
+
+        val arrayAdapter = ArrayAdapter.createFromResource(this, R.array.periods,R.layout.spinner_item_period)
+        period.adapter = arrayAdapter
     }
 }

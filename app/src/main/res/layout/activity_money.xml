@@ -8,9 +8,7 @@
 
     <LinearLayout
         android:id="@+id/settings"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        style="@style/linear_layout"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,21 +21,15 @@
             android:orientation="horizontal"
             android:layout_weight="1"
             android:gravity="center">
-            <TextView
+            <Spinner
                 android:id="@+id/period"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginHorizontal="20dp"
-                android:text="Последние 30 дней (12.12-12.01)"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 />
-            <ImageView
-                android:id="@+id/ic_arrow"
-                style="@style/add_images"
-                android:padding="5dp"
-                android:src="@drawable/ic_arrow"/>
         </LinearLayout>
         <ImageView
             android:id="@+id/vector1"
