@@ -25,7 +25,7 @@
         android:layout_height="42dp"
         android:src="@drawable/ic_check"
         android:background="@drawable/register_btn_bg"
-        android:layout_margin="30dp"
+        android:layout_margin="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/phone_input"
