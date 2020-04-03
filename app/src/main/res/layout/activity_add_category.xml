@@ -20,8 +20,8 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="10dp"
             android:layout_marginHorizontal="10dp"
-            android:textSize="25sp"
-            android:text="Выбор категории"
+            android:textSize="20sp"
+            android:text="Выберите категорию"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
@@ -48,24 +48,28 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/ic_food"
+                android:id="@+id/ic_supermarket"
                 style="@style/add_images"
-                android:src="@drawable/diet" />
+                android:background="@drawable/category_btn_bg"
+                android:src="@drawable/supermarket" />
+
+            <ImageView
+                android:id="@+id/ic_cafe_food"
+                style="@style/add_images"
+                android:background="@drawable/category_btn_bg2"
+                android:src="@drawable/cafe_food" />
 
             <ImageView
                 android:id="@+id/ic_transport"
                 style="@style/add_images"
-                android:src="@drawable/military_vehicle" />
+                android:background="@drawable/category_btn_bg3"
+                android:src="@drawable/transport" />
 
             <ImageView
-                android:id="@+id/ic_technique"
+                android:id="@+id/ic_health"
                 style="@style/add_images"
-                android:src="@drawable/computer" />
-
-            <ImageView
-                android:id="@+id/ic_spa"
-                style="@style/add_images"
-                android:src="@drawable/massage" />
+                android:background="@drawable/category_btn_bg4"
+                android:src="@drawable/health" />
         </LinearLayout>
 
         <LinearLayout
@@ -78,22 +82,119 @@
             <ImageView
                 android:id="@+id/ic_clothes"
                 style="@style/add_images"
-                android:src="@drawable/tshirt" />
+                android:background="@drawable/category_btn_bg5"
+                android:src="@drawable/clothes" />
 
             <ImageView
-                android:id="@+id/ic_health"
+                android:id="@+id/ic_entertainment"
                 style="@style/add_images"
-                android:src="@drawable/heart" />
+                android:background="@drawable/category_btn_bg6"
+                android:src="@drawable/entertainment" />
 
             <ImageView
-                android:id="@+id/ic_travels"
+                android:id="@+id/ic_house"
                 style="@style/add_images"
-                android:src="@drawable/beach" />
+                android:background="@drawable/category_btn_bg7"
+                android:src="@drawable/house" />
 
             <ImageView
-                android:id="@+id/ic_cafe"
+                android:id="@+id/ic_petrol"
                 style="@style/add_images"
-                android:src="@drawable/cafe" />
+                android:background="@drawable/category_btn_bg8"
+                android:src="@drawable/petrol" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_hobby"
+                style="@style/add_images"
+                android:background="@drawable/category_btn_bg9"
+                android:src="@drawable/hobby" />
+
+            <ImageView
+                android:id="@+id/ic_car"
+                style="@style/add_images"
+                android:background="@drawable/category_btn_bg10"
+                android:src="@drawable/car" />
+
+            <ImageView
+                android:id="@+id/ic_cigarettes"
+                style="@style/add_images"
+                android:background="@drawable/category_btn_bg11"
+                android:src="@drawable/cigarettes" />
+
+            <ImageView
+                android:id="@+id/ic_spa"
+                style="@style/add_images"
+                android:background="@drawable/category_btn_bg12"
+                android:src="@drawable/spa" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_home_appliances"
+                style="@style/add_images"
+                android:background="@drawable/category_btn_bg13"
+                android:src="@drawable/home_appliances" />
+
+            <ImageView
+                android:id="@+id/ic_pets"
+                style="@style/add_images"
+                android:background="@drawable/category_btn_bg14"
+                android:src="@drawable/pets" />
+
+            <ImageView
+                android:id="@+id/ic_relaxation"
+                style="@style/add_images"
+                android:background="@drawable/category_btn_bg15"
+                android:src="@drawable/relaxation" />
+
+            <ImageView
+                android:id="@+id/ic_education"
+                style="@style/add_images"
+                android:background="@drawable/category_btn_bg16"
+                android:src="@drawable/education" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_sport"
+                style="@style/add_images"
+                android:background="@drawable/category_btn_bg17"
+                android:src="@drawable/sport" />
+
+            <ImageView
+                android:id="@+id/ic_money"
+                style="@style/add_images"
+                android:background="@drawable/category_btn_bg18"
+                android:src="@drawable/money" />
+
+            <ImageView
+                android:id="@+id/ic_unexpected_spending"
+                style="@style/add_images"
+                android:background="@drawable/category_btn_bg19"
+                android:src="@drawable/unexpected_spending" />
+
+            <ImageView
+                android:id="@+id/ic_category"
+                style="@style/add_images"
+                android:background="@drawable/category_btn_bg20"
+                android:src="@drawable/no_category" />
         </LinearLayout>
     </LinearLayout>
 

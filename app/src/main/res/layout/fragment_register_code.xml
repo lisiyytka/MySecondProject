@@ -5,40 +5,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/transparentGreen">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Вам на телефон отправлено SMS с кодом подтверждения"
-        android:layout_margin="150dp"
+    <EditText
+        android:id="@+id/code_input"
+        style="@style/register_input"
+        android:hint="Введите код"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/code_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="250dp"
-        android:hint="Введите код"
-        android:textSize="25sp"
-        android:inputType="number"
+    <TextView
+        android:id="@+id/text_message"
+        style="@style/check"
+        android:text="Вам на телефон отправлено SMS с кодом подтверждения"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="129dp" />
+        app:layout_constraintTop_toBottomOf="@+id/code_input" />
 
     <ImageView
         android:id="@+id/register_btn"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
+        style="@style/next_btn"
         android:src="@drawable/ic_check"
-        android:background="@drawable/register_btn_bg"
-        android:layout_margin="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/code_input"
+        app:layout_constraintTop_toBottomOf="@id/text_message"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

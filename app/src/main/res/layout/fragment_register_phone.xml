@@ -5,30 +5,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/transparentGreen">
 
     <EditText
         android:id="@+id/phone_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/register_input"
         android:hint="Введите номер телефона"
-        android:textSize="25sp"
-        android:layout_margin="250dp"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/next_btn"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
-        android:src="@drawable/ic_check"
-        android:background="@drawable/register_btn_bg"
-        android:layout_margin="40dp"
+    <CheckBox
+        android:id="@+id/check"
+        style="@style/check"
+        android:text="Я даю согласие на обработку персональных данных."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/phone_input"
+        app:layout_constraintTop_toBottomOf="@id/phone_input"/>
+
+    <ImageView
+        android:id="@+id/next_btn"
+        style="@style/next_btn"
+        android:src="@drawable/ic_check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/check"
     />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
