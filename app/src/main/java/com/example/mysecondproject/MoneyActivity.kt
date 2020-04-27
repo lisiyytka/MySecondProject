@@ -21,9 +21,8 @@ class MoneyActivity : BaseActivity(0) {
         Log.d(TAG, "onCreate")
         var intent = intent
         val sumTv = intent.getStringExtra("sum")
-
         val sumCentre = findViewById<TextView>(R.id.sum_centre)
-        sumCentre.text="$"+sumTv
+        sumCentre.text=sumTv
 
         val arrayAdapter = ArrayAdapter.createFromResource(this, R.array.periods,R.layout.spinner_item_period)
         period.adapter = arrayAdapter

@@ -54,6 +54,7 @@
                     android:src="@drawable/supermarket" />
 
                 <TextView
+                    android:id="@+id/text_supermarket"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_supermarket"
                     android:layout_alignTop="@id/ic_supermarket"
@@ -73,6 +74,7 @@
                     android:src="@drawable/cafe_food"/>
 
                 <TextView
+                    android:id="@+id/text_cafe"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_cafe_food"
                     android:layout_alignTop="@id/ic_cafe_food"
@@ -111,6 +113,7 @@
                     android:src="@drawable/health" />
 
                 <TextView
+                    android:id="@+id/text_health"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_health"
                     android:layout_alignTop="@id/ic_health"
@@ -137,6 +140,7 @@
                     android:src="@drawable/clothes" />
 
                 <TextView
+                    android:id="@+id/text_cloth"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_clothes"
                     android:layout_alignTop="@id/ic_clothes"
@@ -156,6 +160,7 @@
                     android:src="@drawable/entertainment" />
 
                 <TextView
+                    android:id="@+id/text_entertainment"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_entertainment"
                     android:layout_alignTop="@id/ic_entertainment"
@@ -175,6 +180,7 @@
                     android:src="@drawable/house" />
 
                 <TextView
+                    android:id="@+id/text_house"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_house"
                     android:layout_alignTop="@id/ic_house"
@@ -194,6 +200,7 @@
                     android:src="@drawable/petrol" />
 
                 <TextView
+                    android:id="@+id/text_petrol"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_petrol"
                     android:layout_alignTop="@id/ic_petrol"
@@ -219,6 +226,7 @@
                     android:src="@drawable/hobby" />
 
                 <TextView
+                    android:id="@+id/text_hobby"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_hobby"
                     android:layout_alignTop="@id/ic_hobby"
@@ -238,6 +246,7 @@
                     android:src="@drawable/car" />
 
                 <TextView
+                    android:id="@+id/text_car"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_car"
                     android:layout_alignTop="@id/ic_car"
@@ -257,6 +266,7 @@
                     android:src="@drawable/cigarettes" />
 
                 <TextView
+                    android:id="@+id/text_cigarettes"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_cigarettes"
                     android:layout_alignTop="@id/ic_cigarettes"
@@ -276,6 +286,7 @@
                     android:src="@drawable/spa" />
 
                 <TextView
+                    android:id="@+id/text_spa"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_spa"
                     android:layout_alignTop="@id/ic_spa"
@@ -303,6 +314,7 @@
                     android:src="@drawable/home_appliances" />
 
                 <TextView
+                    android:id="@+id/text_tech"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_home_appliances"
                     android:layout_alignTop="@id/ic_home_appliances"
@@ -322,6 +334,7 @@
                     android:src="@drawable/pets" />
 
                 <TextView
+                    android:id="@+id/text_animal"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_pets"
                     android:layout_alignTop="@id/ic_pets"
@@ -341,6 +354,7 @@
                     android:src="@drawable/relaxation" />
 
                 <TextView
+                    android:id="@+id/text_relax"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_relaxation"
                     android:layout_alignTop="@id/ic_relaxation"
@@ -360,6 +374,7 @@
                     android:src="@drawable/education" />
 
                 <TextView
+                    android:id="@+id/text_education"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_education"
                     android:layout_alignTop="@id/ic_education"
@@ -385,6 +400,7 @@
                     android:src="@drawable/sport" />
 
                 <TextView
+                    android:id="@+id/text_sport"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_sport"
                     android:layout_alignTop="@id/ic_sport"
@@ -404,6 +420,7 @@
                     android:src="@drawable/money" />
 
                 <TextView
+                    android:id="@+id/text_pay"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_money"
                     android:layout_alignTop="@id/ic_money"
@@ -423,6 +440,7 @@
                     android:src="@drawable/unexpected_spending" />
 
                 <TextView
+                    android:id="@+id/text_unexpected_spending"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_unexpected_spending"
                     android:layout_alignTop="@id/ic_unexpected_spending"
@@ -442,6 +460,7 @@
                     android:src="@drawable/no_category" />
 
                 <TextView
+                    android:id="@+id/text_no_category"
                     style="@style/bottomText"
                     android:layout_alignLeft="@+id/ic_no_category"
                     android:layout_alignTop="@id/ic_no_category"

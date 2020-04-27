@@ -78,8 +78,8 @@
                     android:layout_marginHorizontal="20dp"
                     android:layout_weight="1"
                     android:textColor="@color/black"
-                    android:textSize="35sp"
-                    android:hint="0"/>
+                    android:textSize="35sp"/>
+                    //android:hint="0"
 
             </LinearLayout>
 
