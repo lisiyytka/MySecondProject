@@ -11,13 +11,12 @@ import kotlinx.android.synthetic.main.activity_add.*
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_money.*
 
-class MoneyActivity : BaseActivity(0) {
+class MoneyActivity :AppCompatActivity() {
     private val TAG = "MoneyActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_money)
-        setupBottomNavigation()
         Log.d(TAG, "onCreate")
         var intent = intent
         val sumTv = intent.getStringExtra("sum")
@@ -27,5 +26,15 @@ class MoneyActivity : BaseActivity(0) {
 
         val arrayAdapter = ArrayAdapter.createFromResource(this, R.array.periods,R.layout.spinner_item_period)
         period.adapter = arrayAdapter
+
+        add_btn.setOnClickListener {
+            val intent = Intent(this, CategoryActivity::class.java)
+            startActivity(intent)
+        }
+
+        app_settings.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
