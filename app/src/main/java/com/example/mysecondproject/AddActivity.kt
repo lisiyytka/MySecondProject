@@ -15,17 +15,15 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 
-class AddActivity : AppCompatActivity() {
+class AddActivity : BaseActivity(2) {
     private val TAG = "AddActivity"
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add)
+        setupBottomNavigation()
         Log.d(TAG, "onCreate")
-        val text = intent.getStringExtra("text")
-        val categoryName = findViewById<TextView>(R.id.category_text)
-        categoryName.text = text
         btn_plus.setOnClickListener { setTextFields("+") }
         btn_multiply.setOnClickListener { setTextFields("*") }
         btn_divide.setOnClickListener { setTextFields("/") }
@@ -71,11 +69,6 @@ class AddActivity : AppCompatActivity() {
             val sumRetr = sum.text.toString()
             val intent = Intent(this@AddActivity, MoneyActivity::class.java)
             intent.putExtra("sum",sumRetr.toString())
-            startActivity(intent)
-        }
-
-        back.setOnClickListener {
-            val intent = Intent(this, CategoryActivity::class.java)
             startActivity(intent)
         }
 
