@@ -46,7 +46,7 @@ class AddActivity : BaseActivity(2) {
                 sum.text=str.substring(0,str.length-1)
             }
     }
-//asf
+//asfaaaaaa
 
         //Основнаые действия калькулятора
         btn_equals.setOnClickListener {
