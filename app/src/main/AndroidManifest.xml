@@ -9,9 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CategoryActivity"></activity>
-        <activity android:name=".CotegoryActivity" />
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".CategoryActivity"/>
         <activity android:name=".SettingsActivity" />
         <activity android:name=".QrActivity" />
         <activity android:name=".MoneyActivity" />
