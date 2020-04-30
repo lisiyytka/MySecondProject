@@ -8,29 +8,29 @@
     android:background="@color/transparentGreen">
 
     <EditText
-        android:id="@+id/code_input"
+        android:id="@+id/phone_input"
         style="@style/register_input"
-        android:hint="Введите код"
-        android:inputType="number"
+        android:hint="Введите номер телефона"
+        android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/text_message"
+    <CheckBox
+        android:id="@+id/check"
         style="@style/check"
-        android:text="Вам на телефон отправлено SMS с кодом подтверждения"
+        android:text="Я даю согласие на обработку персональных данных."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/code_input" />
+        app:layout_constraintTop_toBottomOf="@id/phone_input"/>
 
     <ImageView
-        android:id="@+id/register_btn"
+        android:id="@+id/next_btn"
         style="@style/next_btn"
         android:src="@drawable/ic_check"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_message"
-        />
+        app:layout_constraintTop_toBottomOf="@id/check"
+    />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
