@@ -47,7 +47,7 @@ class AddActivity : BaseActivity(2) {
             }
     }
 
-
+//aaaaa
         //Основнаые действия калькулятора
         btn_equals.setOnClickListener {
             try {
