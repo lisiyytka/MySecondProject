@@ -39,7 +39,7 @@ class AddActivity : BaseActivity(2) {
         btn_8.setOnClickListener { setTextFields("8") }
         btn_9.setOnClickListener { setTextFields("9") }
         btn_dott.setOnClickListener { setTextFields(".") }
-
+//as
         btn_delete.setOnClickListener {
             val str=sum.text.toString()
             if(str.isNotEmpty()){
