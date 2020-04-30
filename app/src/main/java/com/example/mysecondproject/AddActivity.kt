@@ -17,10 +17,6 @@ import android.widget.Spinner;
 
 class AddActivity : BaseActivity(2) {
     private val TAG = "AddActivity"
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.i(TAG, "onDestroy")
-    }
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,12 +24,6 @@ class AddActivity : BaseActivity(2) {
         setContentView(R.layout.activity_add)
         setupBottomNavigation()
         Log.d(TAG, "onCreate")
-
-        var intent = intent
-        val sumTv = intent.getStringExtra("sumCentreFin")
-        val sum = findViewById<TextView>(R.id.sum)
-        sum.text = sumTv
-
         btn_plus.setOnClickListener { setTextFields("+") }
         btn_multiply.setOnClickListener { setTextFields("*") }
         btn_divide.setOnClickListener { setTextFields("/") }
@@ -82,10 +72,6 @@ class AddActivity : BaseActivity(2) {
             startActivity(intent)
         }
 
-        var intent1 = intent
-        val sumTv1 = intent1.getStringExtra("supermarket")
-        category_text.text=sumTv1
-
        val arrayAdapter = ArrayAdapter.createFromResource(this, R.array.currencies,R.layout.spinner_item)
        current.adapter = arrayAdapter
     }
@@ -93,11 +79,6 @@ class AddActivity : BaseActivity(2) {
     fun setTextFields(str: String) {
         sum.append(str)
     }
+
 }
-
-
-
-
-
-
 

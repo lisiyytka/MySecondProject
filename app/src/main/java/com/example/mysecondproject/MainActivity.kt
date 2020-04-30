@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         //возврат значения в math_operation и старт калькулятора
         edit_btn.setOnClickListener {
 
-            val intent= Intent(this, AddActivity::class.java)
+            val intent= Intent(this, MoneyActivity::class.java)
             startActivity(intent)
 
         }
