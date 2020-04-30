@@ -10,19 +10,11 @@
     <EditText
         android:id="@+id/code_input"
         style="@style/register_input"
-        android:hint="Введите код"
+        android:hint="Введите пароль"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/text_message"
-        style="@style/check"
-        android:text="Вам на телефон отправлено SMS с кодом подтверждения"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/code_input" />
 
     <ImageView
         android:id="@+id/register_btn"
@@ -30,7 +22,7 @@
         android:src="@drawable/ic_check"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_message"
+        app:layout_constraintTop_toBottomOf="@id/code_input"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

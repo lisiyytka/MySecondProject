@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
 
     </style>
-    
+
     <style name="ActionButton">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
@@ -111,9 +111,16 @@
     <style name="bottomText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">50dp</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="LinearText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
 </resources>

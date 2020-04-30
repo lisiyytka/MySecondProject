@@ -15,15 +15,17 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 
-class AddActivity : BaseActivity(2) {
+class AddActivity : AppCompatActivity() {
     private val TAG = "AddActivity"
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add)
-        setupBottomNavigation()
         Log.d(TAG, "onCreate")
+        val text = intent.getStringExtra("text")
+        val categoryName = findViewById<TextView>(R.id.category_text)
+        categoryName.text = text
         btn_plus.setOnClickListener { setTextFields("+") }
         btn_multiply.setOnClickListener { setTextFields("*") }
         btn_divide.setOnClickListener { setTextFields("/") }
@@ -45,9 +47,9 @@ class AddActivity : BaseActivity(2) {
             if(str.isNotEmpty()){
                 sum.text=str.substring(0,str.length-1)
             }
-    }
+        }
 
-//aaaaa
+
         //Основнаые действия калькулятора
         btn_equals.setOnClickListener {
             try {
@@ -72,8 +74,13 @@ class AddActivity : BaseActivity(2) {
             startActivity(intent)
         }
 
-       val arrayAdapter = ArrayAdapter.createFromResource(this, R.array.currencies,R.layout.spinner_item)
-       current.adapter = arrayAdapter
+        back.setOnClickListener {
+            val intent = Intent(this, CategoryActivity::class.java)
+            startActivity(intent)
+        }
+
+        val arrayAdapter = ArrayAdapter.createFromResource(this, R.array.currencies,R.layout.spinner_item)
+        current.adapter = arrayAdapter
     }
 
     fun setTextFields(str: String) {
@@ -81,4 +88,5 @@ class AddActivity : BaseActivity(2) {
     }
 
 }
+
 
