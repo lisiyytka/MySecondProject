@@ -68,9 +68,14 @@ class AddActivity : AppCompatActivity() {
         }
 
         check.setOnClickListener {
-            val sumRetr = sum.text.toString()
-            val intent = Intent(this@AddActivity, MoneyActivity::class.java)
-            intent.putExtra("sum",sumRetr.toString())
+            val intent = Intent(this, MoneyActivity::class.java)
+            val text = sum.text.toString()
+            //val a = Transfer(categoryName.text.toString(),)
+
+            a.Category= categoryName.text.toString()
+            findViewById<TextView>(R.id.massageTextEdit)
+            a.Comment=massageTextEdit.text.toString()
+            //intent.putExtra("sum", text)
             startActivity(intent)
         }
 
