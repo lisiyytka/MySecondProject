@@ -81,7 +81,7 @@ class DatabaseHandler(context: Context) :
                 "($ID Integer AUTO_INCREMENT, $CATEGORY TEXT, $LOSS Money, $INCOME Money, $DATA DATETIME, $COMMENT TEXT, PRIMARY KEY ($ID)"
         db?.execSQL(CREATE_TABLE)
     }
-
+//asfaf
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         // Called when the database needs to be upgraded
     }
