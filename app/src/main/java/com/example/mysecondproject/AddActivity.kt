@@ -72,9 +72,9 @@ class AddActivity : AppCompatActivity() {
             val text = sum.text.toString()
             //val a = Transfer(categoryName.text.toString(),)
 
-            a.Category= categoryName.text.toString()
-            findViewById<TextView>(R.id.massageTextEdit)
-            a.Comment=massageTextEdit.text.toString()
+//            a.Category= categoryName.text.toString()
+//            findViewById<TextView>(R.id.massageTextEdit)
+//            a.Comment=massageTextEdit.text.toString()
             //intent.putExtra("sum", text)
             startActivity(intent)
         }
