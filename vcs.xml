@@ -8,7 +8,7 @@
         </UrlAndUserName>
         <UrlAndUserName>
           <option name="url" value="http://github.com" />
-          <option name="userName" value="k_nastya3@mail.ru" />
+          <option name="userName" value="shum.slav@yandex.ru" />
         </UrlAndUserName>
         <UrlAndUserName>
           <option name="url" value="https://github.com/lisiyytka/MySecondProject.git" />
@@ -17,5 +17,15 @@
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\shums\AndroidStudioProjects" />
+  </component>
+  <component name="Vcs.Log.App.Settings">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="1" />
+        <option value="2" />
+        <option value="3" />
+      </list>
+    </option>
   </component>
 </application>
