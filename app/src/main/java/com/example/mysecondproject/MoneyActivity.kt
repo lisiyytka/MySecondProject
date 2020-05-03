@@ -25,11 +25,11 @@ class MoneyActivity :AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_money)
         Log.d(TAG, "onCreate")
-        var intent = intent
-        val sumTv = intent.getStringExtra("sum")
-
+//        var intent = intent
+//        val sumTv = intent.getStringExtra("sum")
+//
         val sumCentre = findViewById<TextView>(R.id.sum_centre)
-        sumCentre.text=sumTv
+
 
         val arrayAdapter = ArrayAdapter.createFromResource(this, R.array.periods,R.layout.spinner_item_period)
         period.adapter = arrayAdapter
@@ -55,13 +55,20 @@ class MoneyActivity :AppCompatActivity() {
 /**
  * Created by Eyehunt Team on 07/06/18.
  */
-class Transfer {
-    var id: Int = 0
-    var Category: String = ""
-    var Loss: Int = 0
-    var Income: Int = 0
-    var Data: Int = 0
-    var Comment: String = ""
+class Transfer(
+    category: String,
+    loss: Int,
+    income: Int,
+    date: Int,
+    comment: String
+)
+{
+    val id: Int = 0
+    var Category: String = category
+    var Loss: Int = loss
+    var Income: Int = income
+    var Date: Int = date
+    var Comment: String = comment
 }
 
 class DatabaseHandler(context: Context) :
@@ -97,7 +104,7 @@ class DatabaseHandler(context: Context) :
         values.put(CATEGORY, transfer.Category)
         values.put(LOSS, transfer.Loss)
         values.put(INCOME, transfer.Income)
-        values.put(DATA, transfer.Data)
+        values.put(DATA, transfer.Date)
         values.put(COMMENT, transfer.Comment)
         val _success = db.insert(TABLE_NAME, null, values)
         db.close()
