@@ -63,8 +63,8 @@ class CalculateActivity : AppCompatActivity() {
                 Log.d("Ошибка","Сообщение: ${e.message}")
             }
 
-        }
 
+        }
     }
 
     fun setTextFields(str: String) {
