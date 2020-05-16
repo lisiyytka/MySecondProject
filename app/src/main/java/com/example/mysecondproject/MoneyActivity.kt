@@ -30,7 +30,7 @@ class MoneyActivity :AppCompatActivity() {
 //
         val sumCentre = findViewById<TextView>(R.id.sum_centre)
 
-
+        //suka
         val arrayAdapter = ArrayAdapter.createFromResource(this, R.array.periods,R.layout.spinner_item_period)
         period.adapter = arrayAdapter
 
