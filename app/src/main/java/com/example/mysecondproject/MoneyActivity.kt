@@ -16,8 +16,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import org.w3c.dom.Comment
 import java.sql.Date
-
-
+//aaaa
 class MoneyActivity :AppCompatActivity() {
     private val TAG = "MoneyActivity"
 
