@@ -16,8 +16,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import org.w3c.dom.Comment
 import java.sql.Date
-
-
+//aaaa
 class MoneyActivity :AppCompatActivity() {
     private val TAG = "MoneyActivity"
 
@@ -30,7 +29,7 @@ class MoneyActivity :AppCompatActivity() {
 //
         val sumCentre = findViewById<TextView>(R.id.sum_centre)
 
-
+        //suka
         val arrayAdapter = ArrayAdapter.createFromResource(this, R.array.periods,R.layout.spinner_item_period)
         period.adapter = arrayAdapter
 
@@ -43,6 +42,7 @@ class MoneyActivity :AppCompatActivity() {
             val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
+            //qqwqwerqwr11
     }
 }
 
